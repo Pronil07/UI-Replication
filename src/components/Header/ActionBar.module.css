@@ -1,0 +1,52 @@
+.flexlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  list-style: none;
+  gap: 2em;
+}
+
+.flexlist > li > * {
+  text-decoration: none;
+  color: var(--gray-3);
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: color 200ms ease, 
+              background-color 200ms ease;
+}
+
+.flexlist > li > *:hover,
+.flexlist > li > *:focus {
+  color: var(--gray-4);
+  outline: none;
+}
+
+
+
+.flexlist > li:first-child {
+  border-right: 1px solid var(--gray-2);
+}
+.flexlist > li:last-child {
+    background-color: var(--black-1);
+    padding: 0.6em 1.6em;
+    border-radius: 0.5em;
+}
+.flexlist > li:last-child > * {
+    color: var(--white-1);
+}
+.flexlist > li:last-child:hover, .flexlist > li:last-child:hover > *{
+    background-color: var(--red-1);
+    color: var(--black-1);
+}
+
+
+
+
+.icon {
+  width: 2em;
+  height: 2em;
+  padding: 0.2em;
+  margin-right: 1em;
+}   

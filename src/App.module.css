@@ -1,0 +1,5 @@
+.app {
+  background-color: var(--gray-1);
+  width: 100%;
+  height: max(100vh , 100%);
+}

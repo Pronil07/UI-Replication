@@ -1,0 +1,98 @@
+.bodyContainer {
+    width: 100%;
+    height: 100vh;
+    padding: 4em 1em 1em 1em;
+    user-select: none;
+}
+
+.flexContainer {
+    display: flex;
+    flex: 0 1 auto;
+    padding-top: 4em;
+    gap: 2em;
+}
+
+
+.flexLeft {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.linkFlow {
+    text-transform: uppercase;
+    color: var(--gray-3);
+    display: inline-flex;
+    width: fit-content;
+    gap: 1em;
+}
+
+.linkFlow > h3 {
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    
+}
+
+.linkFlow >h3:first-child {
+    border-bottom: 1px solid var(--gray-2);
+}
+
+.linkFlow >h3:first-child:hover {
+    border-bottom: 1px solid var(--gray-3);
+    color: var(--gray-4);
+}
+
+.flexColumnBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.flexColumnBox > h1 {
+    font-size: 2em;
+    font-weight: 400;
+    color: var(--gray-5);
+}
+
+.flexColumnBox > p {
+    font-size: 1.2em;
+    color: var(--gray-3);
+}
+
+.flexRight {
+    margin-inline: auto;
+}
+
+.flexRight > img {
+    width: 100%;
+    height: auto;
+    box-shadow: var(--shadow-1);
+}
+
+
+@media screen and (min-width:1620px) {
+    .flexLeft {
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .flexContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flexLeft {
+        width: 60%;
+        justify-content: center;
+    }
+
+    .linkFlow {
+        align-self: center;
+    }
+
+}

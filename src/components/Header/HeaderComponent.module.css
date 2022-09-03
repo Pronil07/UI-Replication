@@ -1,0 +1,25 @@
+.widthFull {
+  position: fixed;
+  width: 100%;
+  height: 4em;
+  background-color: var(--white-1);
+}
+
+.flexbar {
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+  background-color: var(--white-1);
+  max-width: 1420px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+}

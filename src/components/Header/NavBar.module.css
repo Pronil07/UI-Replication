@@ -1,0 +1,32 @@
+.flexList {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-around;
+  gap: 2em;
+
+  list-style: none;
+  
+}
+
+.flexList > li > * {
+  text-decoration: none;
+  color: var(--gray-3);
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: color 200ms ease;
+}
+
+.flexList > li > *:hover,
+.flexList > li > *:focus {
+  color: var(--gray-4);
+  outline: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .flexList {
+    display: none;
+  }
+}

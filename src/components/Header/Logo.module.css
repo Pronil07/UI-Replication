@@ -1,0 +1,26 @@
+.flexBox {
+    display: flex;
+    max-width: 10em;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flexBox > * {
+    text-decoration: none;
+}
+
+.icon {
+    width: 2em;
+    aspect-ratio: 1 / 1 ;
+    color: var(--red-1);
+}
+
+
+
+.name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--gray-5);
+    text-decoration: none;
+}
